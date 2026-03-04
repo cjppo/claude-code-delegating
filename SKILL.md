@@ -1,9 +1,9 @@
 ---
-name: claudecodedelegate
+name: claude-code-delegating
 description: Delegate coding tasks to a separate Claude Code CLI session for execution or discussion. Claude Code is a powerful coding assistant - great for complex refactoring, multi-file changes, architecture exploration, and nuanced implementation tasks. Use when you need a fresh perspective or want to parallelize work.
 ---
 
-# ClaudeCodeDelegate - Your Claude Code Coding Partner
+# Claude-Code-Delegating - Your Claude Code Coding Partner
 
 Delegate coding execution to a separate Claude Code CLI session. Get Claude Code's full capabilities in a delegated context.
 
@@ -22,26 +22,26 @@ Delegate coding execution to a separate Claude Code CLI session. Get Claude Code
 The script path is:
 
 ```
-~/.claude/skills/claudecodedelegate/scripts/ask_claude.sh
+~/.claude/skills/claude-code-delegating/scripts/ask_claude.sh
 ```
 
 Minimal invocation:
 
 ```bash
-~/.claude/skills/claudecodedelegate/scripts/ask_claude.sh "Your request in natural language"
+~/.claude/skills/claude-code-delegating/scripts/ask_claude.sh "Your request in natural language"
 ```
 
 With workspace context:
 
 ```bash
-~/.claude/skills/claudecodedelegate/scripts/ask_claude.sh "Refactor these components to use the new API - focus on src/components/UserList.tsx and src/components/UserDetail.tsx" \
+~/.claude/skills/claude-code-delegating/scripts/ask_claude.sh "Refactor these components to use the new API - focus on src/components/UserList.tsx and src/components/UserDetail.tsx" \
   --workspace /path/to/project
 ```
 
 Multi-turn conversation (continue a previous session):
 
 ```bash
-~/.claude/skills/claudecodedelegate/scripts/ask_claude.sh "Also add retry logic with exponential backoff" \
+~/.claude/skills/claude-code-delegating/scripts/ask_claude.sh "Also add retry logic with exponential backoff" \
   --session <session_id from previous run>
 ```
 
